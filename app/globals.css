@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient-start: #a78bfa; /* light purple */
+  --gradient-end: #ff78b9; /* pink */
+}
+
+html, body {
+  height: 100%;
+}
+
+.moving-gradient {
+  background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end), var(--gradient-start));
+  background-size: 200% 200%;
+  animation: gradient-x 12s ease infinite;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+}
